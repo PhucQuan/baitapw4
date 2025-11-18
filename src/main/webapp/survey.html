@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murach Survey</title>
+    <link rel="stylesheet" href="styles/survey.css">
+</head>
+<body>
+    <header class="header">
+        <img src="images/murach_logo.svg" alt="Murach" class="logo">
+    </header>
+
+    <main class="container">
+        <h1>Survey</h1>
+        <p>If you have a moment, we'd appreciate it if you would fill out this survey.</p>
+
+        <h2>Your information:</h2>
+        <form action="test" method="post" class="survey-form" novalidate>
+
+            <div class="field">
+                <label for="firstName">First Name</label>
+                <input id="firstName" name="firstName" type="text" autocomplete="given-name" required>
+            </div>
+
+            <div class="field">
+                <label for="lastName">Last Name</label>
+                <input id="lastName" name="lastName" type="text" autocomplete="family-name" required>
+            </div>
+
+            <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required autocomplete="email">
+            </div>
+
+            <div class="field">
+                <label for="dob">Date of Birth</label>
+                <input id="dob" name="dob" type="date">
+            </div>
+
+            <h2>How did you hear about us?</h2>
+            <fieldset class="field radios">
+                <legend class="sr-only">How did you hear about us?</legend>
+                <label><input type="radio" name="referral" value="search" checked> Search engine</label>
+                <label><input type="radio" name="referral" value="word"> Word of mouth</label>
+                <label><input type="radio" name="referral" value="social"> Social Media</label>
+                <label><input type="radio" name="referral" value="other"> Other</label>
+            </fieldset>
+
+            <h2>Would you like to receive announcements about new CDs and special offers?</h2>
+            <div class="field check">
+                <label><input type="checkbox" name="wantOffers" value="yes"> YES, I'd like that.</label>
+            </div>
+            <div class="field check">
+                <label><input type="checkbox" name="emailOK" value="yes"> YES, please send me email announcements.</label>
+            </div>
+
+            <div class="field">
+                <label for="contactBy">Please contact me by:</label>
+                <select id="contactBy" name="contactBy">
+                    <option value="email">Email or postal mail</option>
+                    <option value="emailOnly">Email only</option>
+                    <option value="postalOnly">Postal mail only</option>
+                </select>
+            </div>
+
+            <div class="actions">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
+

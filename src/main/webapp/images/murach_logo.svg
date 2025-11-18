@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="110" viewBox="0 0 220 110" role="img" aria-labelledby="title">
+    <title id="title">Murach Logo (placeholder)</title>
+    <defs>
+        <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#d01f2f"/>
+            <stop offset="100%" stop-color="#a11421"/>
+        </linearGradient>
+    </defs>
+    <rect x="0" y="0" width="220" height="110" rx="8" fill="url(#g)"/>
+    <g fill="#ffffff" font-family="Georgia, 'Times New Roman', serif" font-weight="700" text-anchor="middle">
+        <text x="110" y="70" font-size="42">MURACH</text>
+    </g>
+</svg>
+
+
+

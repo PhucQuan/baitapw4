@@ -1,0 +1,155 @@
+/* Basic layout */
+:root {
+    --brand: #0c8a7b;
+    --brand-dark: #0b6f63;
+    --text: #222;
+    --muted: #555;
+    --border: #d6d6d6;
+    --bg: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+}
+
+.header {
+    padding: 24px 24px 0 24px;
+}
+
+.logo {
+    height: 110px;
+    width: auto;
+}
+
+.container {
+    max-width: 760px;
+    padding: 0 24px 40px 24px;
+}
+
+h1 {
+    color: var(--brand);
+    margin: 8px 0 8px 0;
+    font-size: 32px;
+}
+
+h2 {
+    color: var(--brand);
+    margin: 24px 0 8px 0;
+    font-size: 24px;
+}
+
+p {
+    color: var(--muted);
+}
+
+.survey-form {
+    margin-top: 8px;
+}
+
+.field {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 12px;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.field.check {
+    grid-template-columns: 1fr;
+    align-items: start;
+}
+
+label {
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    height: 30px;
+    padding: 4px 8px;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    font-size: 14px;
+}
+
+.radios {
+    display: flex;
+    gap: 16px;
+    padding-left: 0;
+}
+
+.radios label {
+    font-weight: 400;
+}
+
+.actions {
+    margin-top: 16px;
+}
+
+button[type="submit"] {
+    background: var(--brand);
+    color: #fff;
+    border: 0;
+    border-radius: 3px;
+    padding: 8px 14px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background: var(--brand-dark);
+}
+
+/* a11y */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+
+
+/* Thanks page styles */
+.thanks-container {
+    background: #e8f4f3;
+    border-radius: 8px;
+    padding: 32px;
+    margin: 40px auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.info-display {
+    background: white;
+    padding: 20px;
+    border-radius: 4px;
+    margin: 16px 0;
+    border: 1px solid var(--border);
+}
+
+.info-display p {
+    margin: 8px 0;
+    color: var(--text);
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--muted);
+    font-size: 14px;
+}
